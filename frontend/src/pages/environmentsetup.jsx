@@ -4,9 +4,9 @@ import toast from 'react-hot-toast'
 
 const EnvironmentSetup = () => {
   const [config, setConfig] = useState({
-    mongoUri: 'mongodb+srv://ayushsonkar55_db_user:PsXEbpW9Huh2ePlE@cluster0.17hytf5.mongodb.net/SIHBOT',
+    mongoUri: 'your-mongo-uri',
     port: '5000',
-    jwtSecret: 'gJ8jxfnmdGsnu2XlPHpDp4gsu0vNDNbqxSBxjvMoB2xGWDK3-u2lFJ6OmabNCIFjPGGjoNJczNZntUAgP-V7Sg',
+    jwtSecret: 'your-jwt-secret',
     nodeEnv: 'development'
   })
 
