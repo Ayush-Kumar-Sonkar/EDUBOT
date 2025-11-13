@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-dark-900 text-white font-sans;
+  }
+}
+
+@layer components {
+  .chat-message {
+    @apply p-4 rounded-lg mb-4 max-w-3xl;
+  }
+  
+  .chat-message.user {
+    @apply bg-primary-600 text-white ml-auto;
+  }
+  
+  .chat-message.bot {
+    @apply bg-dark-800 text-gray-100 mr-auto;
+  }
+  
+  .sidebar-item {
+    @apply flex items-center space-x-3 p-3 rounded-lg hover:bg-dark-800 transition-colors cursor-pointer;
+  }
+  
+  .nav-item {
+    @apply px-4 py-2 rounded-lg hover:bg-primary-600 transition-colors cursor-pointer;
+  }
+  
+  .nav-item.active {
+    @apply bg-primary-600 text-white;
+  }
+  
+  .card {
+    @apply bg-dark-800 rounded-lg p-6 border border-dark-700;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply bg-dark-700 hover:bg-dark-600 text-white px-4 py-2 rounded-lg transition-colors;
+  }
+  
+  .input-field {
+    @apply bg-dark-800 border border-dark-600 rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500;
+  }
+}
+
+/* Language-specific font classes */
+.font-hindi {
+  font-family: 'Noto Sans Devanagari', system-ui, sans-serif;
+}
+
+.font-bengali {
+  font-family: 'Noto Sans Bengali', system-ui, sans-serif;
+}
+
+.font-tamil {
+  font-family: 'Noto Sans Tamil', system-ui, sans-serif;
+}
+
+.font-telugu {
+  font-family: 'Noto Sans Telugu', system-ui, sans-serif;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-dark-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-dark-500;
+}
